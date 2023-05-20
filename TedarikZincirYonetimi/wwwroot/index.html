@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>TedarikZincirYonetimi</title>
+    <base href="/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/app.css" rel="stylesheet" />
+    <title>Supply Chain Website Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+ <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        transition: 0.5s;
+        font-family: 'Roboto Slab', serif;
+        box-sizing: border-box;
+    }
+
+    .container-fluid {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(Images/network3.jpg) center / cover;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 1200px;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: #fff;
+        cursor: pointer;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        nav ul li {
+            margin-right: 30px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+    .active {
+        color: #058283;
+    }
+
+    nav ul li:hover {
+        color: #058283;
+    }
+
+    .btn {
+        width: 120px;
+        height: 45px;
+        border-radius: 8px;
+        border: none;
+        background: #058283;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+        .btn:hover {
+            background: #fff;
+            color: #058283;
+        }
+
+    .content {
+        width: 1200px;
+        height: 100vh;
+        margin: auto;
+    }
+
+        .content h3 {
+            color: #058283;
+            padding-top: 100px;
+            font-weight: 400;
+        }
+
+        .content h1 {
+            font-size: 80px;
+            color: #fff;
+            margin-top: 20px;
+            line-height: 75px;
+        }
+
+        .content p {
+            color: #f1f1f1;
+            font-size: 16px;
+            margin-top: 30px;
+            line-height: 30px;
+            letter-spacing: 1px;
+        }
+
+        .content .btn {
+            margin-top: 20px;
+            width: 150px;
+            height: 50px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        .content .btn2 {
+            background: transparent;
+            border: 1px solid #058283;
+            border-radius: 8px;
+            color: #fff;
+            margin-left: 10px;
+        }
+
+            .content .btn2:hover {
+                background: #058283;
+            }
+
+    .social a {
+        text-decoration: none;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        color: #eee;
+        cursor: pointer;
+        margin-right: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-bottom: 35px;
+    }
+
+        .social a:hover {
+            transform: scale(1.1);
+            background: #058283;
+            transition: .4s;
+        }
+
+    .service {
+        background: #058283;
+        width: 100%;
+        padding: 100px 0px;
+    }
+
+    .title h2 {
+        color: white;
+        font-size: 75px;
+        width: 1130px;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+    }
+
+    .card {
+        height: 365px;
+        width: 335px;
+        padding: 20px 35px;
+        background: #0a0101;
+        border-radius: 20px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+        .card i {
+            font-size: 50px;
+            display: block;
+            text-align: center;
+            margin: 25px 0px;
+            color: whitesmoke;
+        }
+
+    .h5 {
+        color: white;
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+
+    .pra p {
+        color: #058283;
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom: 25px;
+    }
+
+    .card .button {
+        border-radius: 30px;
+        padding: 9px 22px;
+        border: 2px solid #058283;
+        background-color: #0a0101;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: .4s;
+    }
+
+        .card .button:hover {
+            background: #058283;
+            border: 2px solid #058283;
+            cursor: pointer;
+        }
+</style>
+ <body>
+     <div class="container-fluid">
+         <div class="container">
+             <h2 class="logo">Source Code</h2>
+             <nav>
+                 <ul>
+                     <li class="active">Anasayfa</li>
+                     <li>Çözümlerimiz</li>
+                     <li>Endüstriler</li>
+                     <li>Platform</li>
+                     <li>Hakkımızda</li>
+                     <li><button class="btn">Demo İste</button></li>
+                 </ul>
+             </nav>
+         </div>
+         <div class="content">
+             <h3>Tedarik Zinciri Yönetim</h3>
+             <h1> <span class="input"></span> </h1>
+             <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit ullam laudantium exercitationem
+                 magnam optio ipsum dicta minus ratione quibusdam excepturi delectus placeat, impedit minima, tenetur, ea
+                 possimus dolorum quae?
+             </p>
+             <br>
+             <div class="social">
+                 <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+             </div>
+             <button class="btn">Daha Fazla</button>
+             <button class="btn btn2">Policy</button>
+
+         </div>
+     </div>
+
+     <div class="service">
+         <div class="title">
+             <h2>Our Service</h2>
+         </div>
+
+         <div class="box">
+             <div class="card">
+                 <i class="fas fa-bars"></i>
+                 <h5>Web Development</h5>
+                 <div class="pra">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                     <p>
+                     <p style="text-align: center;"></p>
+                     <a class="button" href="#">Read More</a>
+                     </p>
+                 </div>
+             </div>
+
+             <div class="card">
+                 <i class="fas fa-user"></i>
+                 <h5>Web Development</h5>
+                 <div class="pra">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                     <p>
+                     <p style="text-align: center;"></p>
+                     <a class="button" href="#">Read More</a>
+                     </p>
+                 </div>
+             </div>
+
+             <div class="card">
+                 <i class="fas fa-bell"></i>
+                 <h5>Web Development</h5>
+                 <div class="pra">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                     <p>
+                     <p style="text-align: center;"></p>
+                     <a class="button" href="#">Read More</a>
+                     </p>
+                 </div>
+             </div>
+
+             <div class="card">
+                 <i class="fas fa-bell"></i>
+                 <h5>Web Development</h5>
+                 <div class="pra">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                     <p>
+                     <p style="text-align: center;"></p>
+                     <a class="button" href="#">Read More</a>
+                     </p>
+                 </div>
+             </div>
+
+             <div class="card">
+                 <i class="fas fa-bell"></i>
+                 <h5>Web Development</h5>
+                 <div class="pra">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                     <p>
+                     <p style="text-align: center;"></p>
+                     <a class="button" href="#">Read More</a>
+                     </p>
+                 </div>
+             </div>
+
+         </div>
+     </div>
+
+
+     <script type="text/javascript" src="js/script.js"></script>
+
+     <script src="http://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+     <script>
+         var typed = new Typed(".input", {
+             strings: ["Tedarik Zinciri Yönetimi"],
+             typeSpeed: 70,
+             backSpeed: 60,
+             loop: true
+
+         });
+     </script>
+ </body>
+
+</html>
